@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"region-level analysis","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
+{"description":".","@type":"BlogPosting","headline":"region-level analysis","dateModified":"2020-08-22T00:00:00-05:00","datePublished":"2020-08-22T00:00:00-05:00","url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/mcdm-covid19/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gabicavalcante.github.io/mcdm-covid19/feed.xml" title="MO-Covid19" /><link rel="shortcut icon" type="image/x-icon" href="/mcdm-covid19/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>region-level analysis | MO-Covid19</title>
@@ -31,7 +31,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"region-level analysis","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
+{"description":".","@type":"BlogPosting","headline":"region-level analysis","dateModified":"2020-08-22T00:00:00-05:00","datePublished":"2020-08-22T00:00:00-05:00","url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      18 min read
+      16 min read
     
 </span></p>
 
@@ -150,53 +150,6 @@ window.onload = wrap_img;
     
 <div class="cell border-box-sizing code_cell rendered">
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting plotly
-  Downloading https://files.pythonhosted.org/packages/bf/5f/47ab0d9d843c5be0f5c5bd891736a4c84fa45c3b0a0ddb6b6df7c098c66f/plotly-4.9.0-py2.py3-none-any.whl (12.9MB)
-     |████████████████████████████████| 12.9MB 307kB/s 
-Requirement already satisfied, skipping upgrade: six in /usr/local/lib/python3.6/dist-packages (from plotly) (1.15.0)
-Requirement already satisfied, skipping upgrade: retrying&gt;=1.3.3 in /usr/local/lib/python3.6/dist-packages (from plotly) (1.3.3)
-Installing collected packages: plotly
-  Found existing installation: plotly 4.4.1
-    Uninstalling plotly-4.4.1:
-      Successfully uninstalled plotly-4.4.1
-Successfully installed plotly-4.9.0
-Collecting plotly-express
-  Downloading https://files.pythonhosted.org/packages/d4/d6/8a2906f51e073a4be80cab35cfa10e7a34853e60f3ed5304ac470852a08d/plotly_express-0.4.1-py2.py3-none-any.whl
-Requirement already satisfied, skipping upgrade: scipy&gt;=0.18 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (1.4.1)
-Requirement already satisfied, skipping upgrade: statsmodels&gt;=0.9.0 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (0.10.2)
-Requirement already satisfied, skipping upgrade: patsy&gt;=0.5 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (0.5.1)
-Requirement already satisfied, skipping upgrade: pandas&gt;=0.20.0 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (1.0.5)
-Requirement already satisfied, skipping upgrade: plotly&gt;=4.1.0 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (4.9.0)
-Requirement already satisfied, skipping upgrade: numpy&gt;=1.11 in /usr/local/lib/python3.6/dist-packages (from plotly-express) (1.18.5)
-Requirement already satisfied, skipping upgrade: six in /usr/local/lib/python3.6/dist-packages (from patsy&gt;=0.5-&gt;plotly-express) (1.15.0)
-Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.20.0-&gt;plotly-express) (2.8.1)
-Requirement already satisfied, skipping upgrade: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.20.0-&gt;plotly-express) (2018.9)
-Requirement already satisfied, skipping upgrade: retrying&gt;=1.3.3 in /usr/local/lib/python3.6/dist-packages (from plotly&gt;=4.1.0-&gt;plotly-express) (1.3.3)
-Installing collected packages: plotly-express
-Successfully installed plotly-express-0.4.1
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre></pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -204,79 +157,12 @@ Successfully installed plotly-express-0.4.1
     
 <div class="cell border-box-sizing code_cell rendered">
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already up-to-date: Cython in /usr/local/lib/python3.6/dist-packages (0.29.21)
-Collecting git+https://github.com/statsmodels/statsmodels
-  Cloning https://github.com/statsmodels/statsmodels to /tmp/pip-req-build-hehog4jd
-  Running command git clone -q https://github.com/statsmodels/statsmodels /tmp/pip-req-build-hehog4jd
-  Installing build dependencies ... done
-  Getting requirements to build wheel ... done
-    Preparing wheel metadata ... done
-Requirement already satisfied, skipping upgrade: scipy&gt;=1.1 in /usr/local/lib/python3.6/dist-packages (from statsmodels==0.12.0rc0+13.gb6af4263d) (1.4.1)
-Requirement already satisfied, skipping upgrade: patsy&gt;=0.5 in /usr/local/lib/python3.6/dist-packages (from statsmodels==0.12.0rc0+13.gb6af4263d) (0.5.1)
-Requirement already satisfied, skipping upgrade: numpy&gt;=1.15 in /usr/local/lib/python3.6/dist-packages (from statsmodels==0.12.0rc0+13.gb6af4263d) (1.18.5)
-Requirement already satisfied, skipping upgrade: pandas&gt;=0.21 in /usr/local/lib/python3.6/dist-packages (from statsmodels==0.12.0rc0+13.gb6af4263d) (1.0.5)
-Requirement already satisfied, skipping upgrade: six in /usr/local/lib/python3.6/dist-packages (from patsy&gt;=0.5-&gt;statsmodels==0.12.0rc0+13.gb6af4263d) (1.15.0)
-Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.6.1 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.21-&gt;statsmodels==0.12.0rc0+13.gb6af4263d) (2.8.1)
-Requirement already satisfied, skipping upgrade: pytz&gt;=2017.2 in /usr/local/lib/python3.6/dist-packages (from pandas&gt;=0.21-&gt;statsmodels==0.12.0rc0+13.gb6af4263d) (2018.9)
-Building wheels for collected packages: statsmodels
-  Building wheel for statsmodels (PEP 517) ... done
-  Created wheel for statsmodels: filename=statsmodels-0.12.0rc0+13.gb6af4263d-cp36-cp36m-linux_x86_64.whl size=17427203 sha256=f48fbb0ba1ce15c23cbbe8fb49460c9d01ad20968d38919b760536e256625226
-  Stored in directory: /tmp/pip-ephem-wheel-cache-ypzqcitq/wheels/7d/ad/45/ac1a03bd759c2fa74c486e2b1950d94b55f511b4c2b0418bd5
-Successfully built statsmodels
-Installing collected packages: statsmodels
-  Found existing installation: statsmodels 0.10.2
-    Uninstalling statsmodels-0.10.2:
-      Successfully uninstalled statsmodels-0.10.2
-Successfully installed statsmodels-0.12.0rc0+13.gb6af4263d
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre></pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Cloning into &#39;mo_covid19&#39;...
-remote: Enumerating objects: 219, done.
-remote: Counting objects: 100% (219/219), done.
-remote: Compressing objects: 100% (135/135), done.
-remote: Total 219 (delta 125), reused 163 (delta 73), pack-reused 0
-Receiving objects: 100% (219/219), 1006.02 KiB | 1.34 MiB/s, done.
-Resolving deltas: 100% (125/125), done.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
     
