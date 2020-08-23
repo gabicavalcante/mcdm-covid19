@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Global Mobility Report | MO-Covid19</title>
+<title>region-level analysis | MO-Covid19</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Global Mobility Report" />
+<meta property="og:title" content="region-level analysis" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="." />
 <meta property="og:description" content="." />
@@ -16,12 +16,12 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"Global Mobility Report","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
+{"headline":"region-level analysis","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/mcdm-covid19/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://gabicavalcante.github.io/mcdm-covid19/feed.xml" title="MO-Covid19" /><link rel="shortcut icon" type="image/x-icon" href="/mcdm-covid19/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Global Mobility Report | MO-Covid19</title>
+<title>region-level analysis | MO-Covid19</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Global Mobility Report" />
+<meta property="og:title" content="region-level analysis" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="." />
 <meta property="og:description" content="." />
@@ -31,7 +31,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"headline":"Global Mobility Report","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
+{"headline":"region-level analysis","description":".","datePublished":"2020-08-22T00:00:00-05:00","dateModified":"2020-08-22T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html"},"url":"https://gabicavalcante.github.io/mcdm-covid19/2020/08/22/MO-COVID19-Preprocessing.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -87,13 +87,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Global Mobility Report</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-22T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">region-level analysis</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-22T00:00:00-05:00" itemprop="datePublished">
         Aug 22, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      20 min read
+      18 min read
     
 </span></p>
 
@@ -149,19 +149,6 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">shell</span>
-pip install -U plotly
-pip install -U plotly-express
-#pip install -U pandas
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -223,18 +210,6 @@ Successfully installed plotly-express-0.4.1
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">shell</span>
-pip install --upgrade Cython
-pip install --upgrade git+https://github.com/statsmodels/statsmodels
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -289,16 +264,6 @@ Successfully installed statsmodels-0.12.0rc0+13.gb6af4263d
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git clone https://mo-covid19:m0-c0v1d19@github.com/mo-covid19/mobility-covid19.git mo_covid19
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -326,16 +291,6 @@ Resolving deltas: 100% (125/125), done.
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">mo_covid19.data</span> <span class="kn">import</span> <span class="o">*</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     
@@ -355,24 +310,6 @@ Resolving deltas: 100% (125/125), done.
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">locations_type</span> <span class="o">=</span> <span class="s2">&quot;region&quot;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">collect_data</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="n">locations_type</span><span class="p">)</span>
-
-<span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">locality_name</span> <span class="o">==</span> <span class="s1">&#39;State of São Paulo&#39;</span><span class="p">,</span> <span class="s1">&#39;locality_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;São Paulo&quot;</span>
-<span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">locality_name</span> <span class="o">==</span> <span class="s1">&#39;State of Amazonas&#39;</span><span class="p">,</span> <span class="s1">&#39;locality_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Amazonas&quot;</span>
-<span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">locality_name</span> <span class="o">==</span> <span class="s1">&#39;Lombardy&#39;</span><span class="p">,</span> <span class="s1">&#39;locality_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Lombardia&quot;</span>
-
-<span class="n">long_regions</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;locality_name&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">],</span> <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
-<span class="n">long_regions</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -396,31 +333,6 @@ Resolving deltas: 100% (125/125), done.
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">locations_type</span> <span class="o">==</span> <span class="s2">&quot;region&quot;</span><span class="p">:</span>
-  <span class="n">regions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Île-de-France&quot;</span><span class="p">,</span> <span class="s2">&quot;Amazonas&quot;</span><span class="p">,</span> <span class="s2">&quot;São Paulo&quot;</span><span class="p">,</span> <span class="s2">&quot;Lombardia&quot;</span><span class="p">,</span> <span class="s2">&quot;New York&quot;</span><span class="p">]</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="n">regions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Japan&quot;</span><span class="p">,</span> <span class="s2">&quot;South Korea&quot;</span><span class="p">,</span> <span class="s2">&quot;Canada&quot;</span><span class="p">,</span> <span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="s2">&quot;Spain&quot;</span><span class="p">,</span> <span class="s2">&quot;Argentina&quot;</span><span class="p">,</span> <span class="s2">&quot;New Zealand&quot;</span><span class="p">]</span>
-
-<span class="n">colors_sequence_category</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;#AB63FA&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;#19D3F3&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;#FF6692&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;#68BEBA&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;#FF7F0E&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;#8C564B&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-<span class="n">colors_sequence_locality</span> <span class="o">=</span> <span class="n">colors_sequence_category</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;#DAA51F&quot;</span><span class="p">]</span>
-
-<span class="n">colors_map_locality</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">colors_sequence_locality</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     
@@ -750,94 +662,6 @@ if (outputEl) {{
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="nn">mdates</span>
-
-<span class="n">id_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;locality_name&quot;</span><span class="p">,</span> <span class="s2">&quot;first_case_date&quot;</span><span class="p">,</span> <span class="s2">&quot;restriction_date&quot;</span><span class="p">,</span> <span class="s2">&quot;ease_restriction_date&quot;</span><span class="p">,</span> <span class="s2">&quot;n_days_since_first_case&quot;</span><span class="p">,</span> <span class="s2">&quot;n_days_since_restriction&quot;</span><span class="p">,</span> <span class="s2">&quot;n_days_since_ease_restriction&quot;</span><span class="p">,]</span>
-<span class="n">data_to_plot</span> <span class="o">=</span> <span class="n">data_period</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span>
-    <span class="n">id_vars</span><span class="p">,</span>
-    <span class="n">var_name</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> 
-    <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;value&quot;</span>
-<span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;locality_name==&quot;Lombardia&quot; and category!=&quot;residential&quot; and date &lt;= &quot;2020-07-21&quot;&#39;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">locations_type</span> <span class="o">==</span> <span class="s2">&quot;region&quot;</span><span class="p">:</span>
-  <span class="n">long_regions_plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> 
-        <span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> 
-        <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> 
-        <span class="n">data</span> <span class="o">=</span> <span class="n">data_to_plot</span><span class="p">,</span> 
-        <span class="n">col</span><span class="o">=</span><span class="s2">&quot;locality_name&quot;</span><span class="p">,</span> 
-        <span class="n">col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
-        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;line&quot;</span><span class="p">,</span> 
-        <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> 
-        <span class="n">legend</span><span class="o">=</span><span class="s2">&quot;brief&quot;</span><span class="p">,</span> 
-        <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> 
-        <span class="n">markers</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
-        <span class="n">dashes</span><span class="o">=</span><span class="kc">True</span>
-    <span class="p">)</span>
-
-        
-  <span class="n">long_regions_plot</span><span class="o">.</span><span class="n">_legend</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
-
-  <span class="c1"># Iterate thorugh each axis</span>
-  <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">long_regions_plot</span><span class="o">.</span><span class="n">axes</span><span class="p">:</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> 
-
-      <span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
-      <span class="k">if</span> <span class="n">handles</span><span class="p">:</span>
-        <span class="n">set_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Retail &amp; Recreation&#39;</span><span class="p">,</span> <span class="s1">&#39;Grocery &amp; Pharmacy&#39;</span><span class="p">,</span> <span class="s1">&#39;Parks&#39;</span><span class="p">,</span> <span class="s1">&#39;Transit Stations&#39;</span><span class="p">,</span> <span class="s1">&#39;Workplaces&#39;</span><span class="p">]</span> <span class="c1">#labels[1:]</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="n">handles</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">labels</span><span class="o">=</span><span class="n">set_labels</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">title_fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
-     
-
-      <span class="c1"># Make x and y-axis labels slightly larger</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xlabel</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_ylabel</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-
-      <span class="c1"># Make title more human-readable and larger</span>
-      <span class="k">if</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_title</span><span class="p">():</span>
-          <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-
-      <span class="c1">#set ticks every week</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">mdates</span><span class="o">.</span><span class="n">WeekdayLocator</span><span class="p">())</span>
-      <span class="c1">#set major ticks format</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">mdates</span><span class="o">.</span><span class="n">DateFormatter</span><span class="p">(</span><span class="s1">&#39;%b&#39;</span><span class="p">))</span>
-      <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">mdates</span><span class="o">.</span><span class="n">WeekdayLocator</span><span class="p">(</span><span class="n">interval</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
-
-      <span class="c1"># Make right ylabel more human-readable and larger </span>
-      <span class="k">if</span> <span class="n">ax</span><span class="o">.</span><span class="n">texts</span><span class="p">:</span>
-          <span class="c1"># This contains the right ylabel text</span>
-          <span class="n">txt</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">texts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-          <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">txt</span><span class="o">.</span><span class="n">get_unitless_position</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">txt</span><span class="o">.</span><span class="n">get_unitless_position</span><span class="p">()[</span><span class="mi">1</span><span class="p">],</span>
-                  <span class="n">txt</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">],</span>
-                  <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
-                  <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span>
-                  <span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;xx-large&#39;</span><span class="p">)</span>
-          <span class="c1"># Remove the original text</span>
-          <span class="n">ax</span><span class="o">.</span><span class="n">texts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
-
-      <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">data_to_plot</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;50 &gt; n_days_since_restriction &gt;= 0&quot;</span><span class="p">)[</span><span class="s2">&quot;date&quot;</span><span class="p">],</span> <span class="o">-</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-
-<span class="n">restriction_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s1">&#39;2020-02-23&#39;</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span> 
-<span class="n">ease_restriction_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s2">&quot;2020-05-11&quot;</span><span class="p">,</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">restriction_date</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">ease_restriction_date</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
-<span class="c1">#plt.tick_params(axis=&#39;both&#39;,labelsize=13)</span>
-
-<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span> 
-<span class="n">axes</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">120</span><span class="p">,</span> <span class="mi">220</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
