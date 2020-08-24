@@ -154,6 +154,191 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">long_regions</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;category&quot;</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">plotly_labels</span><span class="p">,</span> <span class="n">color_discrete_sequence</span> <span class="o">=</span> <span class="n">colors_sequence_category</span><span class="p">,</span>
+              <span class="n">facet_col</span><span class="o">=</span><span class="s2">&quot;locality_name&quot;</span><span class="p">,</span> <span class="n">facet_col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>locality_name</th>
+      <th>retail</th>
+      <th>grocery_pharmacy</th>
+      <th>parks</th>
+      <th>transit_stations</th>
+      <th>workplaces</th>
+      <th>residential</th>
+      <th>first_case_date</th>
+      <th>restriction_date</th>
+      <th>ease_restriction_date</th>
+      <th>n_days_since_first_case</th>
+      <th>n_days_since_restriction</th>
+      <th>n_days_since_ease_restriction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2020-02-15</td>
+      <td>Lombardia</td>
+      <td>3.076923</td>
+      <td>-3.538462</td>
+      <td>42.307692</td>
+      <td>9.615385</td>
+      <td>-1.076923</td>
+      <td>-0.846154</td>
+      <td>2020-02-14</td>
+      <td>2020-02-23</td>
+      <td>2020-05-04</td>
+      <td>1</td>
+      <td>-8</td>
+      <td>-79</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2020-02-15</td>
+      <td>New York</td>
+      <td>9.096774</td>
+      <td>-0.967742</td>
+      <td>16.892857</td>
+      <td>10.625000</td>
+      <td>0.387097</td>
+      <td>-0.179487</td>
+      <td>2020-03-01</td>
+      <td>2020-03-15</td>
+      <td>2020-05-15</td>
+      <td>-15</td>
+      <td>-29</td>
+      <td>-90</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2020-02-15</td>
+      <td>Amazonas</td>
+      <td>-2.857143</td>
+      <td>5.750000</td>
+      <td>-19.500000</td>
+      <td>-5.333333</td>
+      <td>6.500000</td>
+      <td>-1.000000</td>
+      <td>2020-03-13</td>
+      <td>2020-03-16</td>
+      <td>2020-05-31</td>
+      <td>-27</td>
+      <td>-30</td>
+      <td>-106</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020-02-15</td>
+      <td>São Paulo</td>
+      <td>2.424528</td>
+      <td>1.944724</td>
+      <td>2.500000</td>
+      <td>1.007576</td>
+      <td>6.419355</td>
+      <td>-0.676647</td>
+      <td>2020-02-26</td>
+      <td>2020-03-16</td>
+      <td>2020-06-01</td>
+      <td>-11</td>
+      <td>-30</td>
+      <td>-107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2020-02-15</td>
+      <td>Île-de-France</td>
+      <td>-11.555556</td>
+      <td>-10.444444</td>
+      <td>7.333333</td>
+      <td>3.222222</td>
+      <td>-8.222222</td>
+      <td>-1.222222</td>
+      <td>2020-01-23</td>
+      <td>2020-03-12</td>
+      <td>2020-05-11</td>
+      <td>23</td>
+      <td>-26</td>
+      <td>-86</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

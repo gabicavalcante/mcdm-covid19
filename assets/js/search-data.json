@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Region level",
-            "content": "",
+            "content": "import plotly.express as px fig = px.line(long_regions, x=&quot;date&quot;, y=&quot;value&quot;, color=&quot;category&quot;, labels=plotly_labels, color_discrete_sequence = colors_sequence_category, facet_col=&quot;locality_name&quot;, facet_col_wrap=2, height=800) fig.show() . date locality_name retail grocery_pharmacy parks transit_stations workplaces residential first_case_date restriction_date ease_restriction_date n_days_since_first_case n_days_since_restriction n_days_since_ease_restriction . 0 2020-02-15 | Lombardia | 3.076923 | -3.538462 | 42.307692 | 9.615385 | -1.076923 | -0.846154 | 2020-02-14 | 2020-02-23 | 2020-05-04 | 1 | -8 | -79 | . 1 2020-02-15 | New York | 9.096774 | -0.967742 | 16.892857 | 10.625000 | 0.387097 | -0.179487 | 2020-03-01 | 2020-03-15 | 2020-05-15 | -15 | -29 | -90 | . 2 2020-02-15 | Amazonas | -2.857143 | 5.750000 | -19.500000 | -5.333333 | 6.500000 | -1.000000 | 2020-03-13 | 2020-03-16 | 2020-05-31 | -27 | -30 | -106 | . 3 2020-02-15 | São Paulo | 2.424528 | 1.944724 | 2.500000 | 1.007576 | 6.419355 | -0.676647 | 2020-02-26 | 2020-03-16 | 2020-06-01 | -11 | -30 | -107 | . 4 2020-02-15 | Île-de-France | -11.555556 | -10.444444 | 7.333333 | 3.222222 | -8.222222 | -1.222222 | 2020-01-23 | 2020-03-12 | 2020-05-11 | 23 | -26 | -86 | .",
             "url": "https://gabicavalcante.github.io/mcdm-covid19/2020/08/23/MO-Covid19-Region.html",
             "relUrl": "/2020/08/23/MO-Covid19-Region.html",
             "date": " • Aug 23, 2020"
