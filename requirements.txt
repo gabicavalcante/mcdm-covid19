@@ -1,0 +1,8 @@
+pandas
+jupyter
+plotly
+plotly-express
+seaborn
+matplotlib
+git+https://github.com/statsmodels/statsmodels
+Cython
