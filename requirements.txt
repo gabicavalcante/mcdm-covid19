@@ -6,3 +6,4 @@ seaborn
 matplotlib
 git+https://github.com/statsmodels/statsmodels
 Cython
+jupyter_contrib_nbextensions
